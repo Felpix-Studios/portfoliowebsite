@@ -7,6 +7,13 @@ let ejs = require('ejs');
 app.use(express.static('public'))
 app.set('view engine', 'ejs');
 
+//Temp Object in place of DB+Schema
+const articles = [{
+    title:"This is my first Article",
+    time:Date.now(),
+    markdown:"*Welcome! Hope you have a great day."
+}]
+
 
 app.get('/',(req,res)=>{
     res.render('index');
@@ -15,7 +22,10 @@ app.get('/projects',(req,res)=>{
     res.render('projects');
 });
 app.get('/articles',(req,res)=>{
-    res.render('articles');
+    res.render('articles',{articles:articles});
+});
+app.get('/articles/:id',(req,res)=>{
+    res.send(req.params.id);
 });
 app.get('/about',(req,res)=>{
     res.render('about');

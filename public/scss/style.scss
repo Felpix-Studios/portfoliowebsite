@@ -1,5 +1,7 @@
 $darkMode:#121212;
 $gray:#505050;
+$blu:#0088c9;
+$bluGreen:#0EA5A0;
 $lightMode: #f6f6f6;
 $titleFont:'Montserrat';
 $textFont:'Source Sans Pro';
@@ -17,6 +19,26 @@ h1{
     margin: 0;
     font-family: $titleFont;
     font-size: 2rem;
+}
+h3{
+    margin: 0;
+    font-family: $titleFont;
+    font-size: 1.75rem;
+}
+h4{
+    margin: 0;
+    font-family: $titleFont;
+    font-size: 1.5rem;
+}
+p{
+    margin: 1rem 0 0 0;
+    font-size: 1.25rem;
+}
+a{
+    color:$blu;
+}
+a:hover{
+    text-decoration: underline;
 }
 .active{
     text-decoration: underline !important;
@@ -68,6 +90,31 @@ nav{
     padding: 6rem 26rem 0 26rem;
 }
 @media(max-width: 1024px) {
+    nav{
+        #title{
+            margin-left: 4rem;
+        }
+        .nav-right{
+            margin-right: 4rem;
+        }
+    }
+    .container{
+        padding: 1rem 4rem 0 4rem;
+    }
 }
 @media(max-width: 768px) {
+    nav{
+        #title{
+            margin-left: 2rem;
+        }
+        .nav-right{
+            margin-right: 2rem;
+            a{
+                padding: 0px 1rem;
+            }
+        }
+    }
+    .container{
+        padding: 1rem 2rem 0 2rem;
+    }
 }

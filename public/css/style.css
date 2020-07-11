@@ -15,6 +15,31 @@ h1 {
   font-size: 2rem;
 }
 
+h3 {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 1.75rem;
+}
+
+h4 {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 1rem 0 0 0;
+  font-size: 1.25rem;
+}
+
+a {
+  color: #0088c9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .active {
   text-decoration: underline !important;
   color: #121212;
@@ -65,6 +90,34 @@ nav .nav-right a:hover {
 .container {
   display: grid;
   padding: 6rem 26rem 0 26rem;
+}
+
+@media (max-width: 1024px) {
+  nav #title {
+    margin-left: 4rem;
+  }
+  nav .nav-right {
+    margin-right: 4rem;
+  }
+
+  .container {
+    padding: 1rem 4rem 0 4rem;
+  }
+}
+@media (max-width: 768px) {
+  nav #title {
+    margin-left: 2rem;
+  }
+  nav .nav-right {
+    margin-right: 2rem;
+  }
+  nav .nav-right a {
+    padding: 0px 1rem;
+  }
+
+  .container {
+    padding: 1rem 2rem 0 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

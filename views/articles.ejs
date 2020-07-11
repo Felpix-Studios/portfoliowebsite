@@ -17,6 +17,21 @@
     </div>
 </nav>
 <div class="container">
+    <h1>Articles</h1>
+    <p>A little known website called Forbes told me that starting a blog could create some serious revenue. Well, that's one career erased from the list.</p>
+    <hr>
+    <div id="Articles-Block">
+
+        <% articles.forEach(article=>{ %>
+            <div class="article">
+                <h1><% article.title %></h1>
+                <p></p>
+                <hr>
+                <p class="dateRead"></p>
+            </div>
+        <% }) %>
+        
+    </div>
 </div>
 </body>
 </html>
