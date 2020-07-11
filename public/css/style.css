@@ -33,7 +33,7 @@ p {
 }
 
 a {
-  color: #0088c9;
+  color: #0EA5A0;
 }
 
 a:hover {
@@ -74,7 +74,7 @@ nav .nav-right {
 }
 nav .nav-right a {
   float: left;
-  color: #505050;
+  color: #707070;
   text-align: center;
   padding: 0px 42px;
   text-decoration: none;
@@ -85,6 +85,16 @@ nav .nav-right a:last-child {
 nav .nav-right a:hover {
   color: #121212;
   text-decoration: underline;
+}
+
+.article h1 {
+  margin-top: 1rem;
+}
+.article .dateRead {
+  color: #707070;
+}
+.article a {
+  color: #121212;
 }
 
 .container {

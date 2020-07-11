@@ -24,10 +24,18 @@
 
         <% articles.forEach(article=>{ %>
             <div class="article">
-                <h1><% article.title %></h1>
-                <p></p>
+                <h1><a><%=article.title %></a></h1>
+                <p><%=article.markdown %></p>
+                <p class="dateRead"><% time=article.time.toString();
+                    words=time.split(" ")
+                    words.length=4;
+                    words.shift();
+                    timeString=""
+                    words.forEach(element => {
+                        timeString+=element+" "
+                    });
+                    %><%=timeString%> • <%=Math.round(article.wordCount/200) %> Min Read</p>
                 <hr>
-                <p class="dateRead"></p>
             </div>
         <% }) %>
         

@@ -10,8 +10,9 @@ app.set('view engine', 'ejs');
 //Temp Object in place of DB+Schema
 const articles = [{
     title:"This is my first Article",
-    time:Date.now(),
-    markdown:"*Welcome! Hope you have a great day."
+    time:new Date(),
+    markdown:"*Welcome! Hope you have a great day.",
+    wordCount:200 
 }]
 
 
