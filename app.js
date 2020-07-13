@@ -1,7 +1,13 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const fs = require('fs');
 
+var MarkdownIt = require('markdown-it'),
+    md = new MarkdownIt();
+
+var result = md.render(fs.readFileSync("articles/test.md").toString());
+console.log(result);
 let ejs = require('ejs'); 
 
 app.use(express.static('public'))
