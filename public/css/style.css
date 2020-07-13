@@ -102,6 +102,12 @@ nav .nav-right a:hover {
   padding: 6rem 26rem 0 26rem;
 }
 
+code {
+  font-family: "Source Code Pro";
+  background-color: #E3E2DA;
+  padding: 4px;
+}
+
 @media (max-width: 1024px) {
   nav #title {
     margin-left: 4rem;

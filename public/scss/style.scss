@@ -5,6 +5,7 @@ $bluGreen:#0EA5A0;
 $lightMode: #f6f6f6;
 $titleFont:'Montserrat';
 $textFont:'Source Sans Pro';
+$codeFont:'Source Code Pro';
 
 *{
     margin: 0;
@@ -102,6 +103,11 @@ nav{
 .container{
     display: grid;
     padding: 6rem 26rem 0 26rem;
+}
+code{
+    font-family: $codeFont;
+    background-color: #E3E2DA;
+    padding: 4px;
 }
 @media(max-width: 1024px) {
     nav{
