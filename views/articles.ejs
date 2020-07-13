@@ -26,14 +26,14 @@
             <div class="article">
                 <h1><a><%=article.title %></a></h1>
                 <%
-                    firstLine=article.markdown.split('.')[0]+"..."
+                    firstLine=article.markdown.split('.')[0]+". "+article.markdown.split('.')[1]+"..."
                     %>
                 <%-firstLine %>
                 <p class="dateRead"><% time=article.time.toString();
-                    words=time.split(" ")
+                    words=time.split(" ");
                     words.length=4;
                     words.shift();
-                    timeString=""
+                    timeString="";
                     words.forEach(element => {
                         timeString+=element+" "
                     });
