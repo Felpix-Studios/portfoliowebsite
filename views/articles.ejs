@@ -25,7 +25,10 @@
         <% articles.forEach(article=>{ %>
             <div class="article">
                 <h1><a><%=article.title %></a></h1>
-                <p><%=article.markdown %></p>
+                <%
+                    firstLine=article.markdown.split('.')[0]+"..."
+                    %>
+                <%-firstLine %>
                 <p class="dateRead"><% time=article.time.toString();
                     words=time.split(" ")
                     words.length=4;

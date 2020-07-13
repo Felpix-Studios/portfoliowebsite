@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 const articles = [{
     title:"This is my first Article",
     time:new Date(),
-    markdown:"*Welcome! Hope you have a great day.",
+    markdown:md.render(fs.readFileSync("articles/test.md").toString()),
     wordCount:200 
 }]
 
