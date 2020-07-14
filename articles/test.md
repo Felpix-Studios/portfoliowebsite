@@ -1,10 +1,4 @@
----	
-title: CommonMark Spec
-author: John MacFarlane
-version: 0.28
-date: '2017-08-01'
-license: '[CC-BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)'
-...
+
 *Lorem* **ipsum** ~~dolor~~ ```css``` amet, consectetur adipiscing elit. Morbi vitae neque volutpat, accumsan nunc nec, egestas quam. Aenean mollis ex a ornare auctor. Curabitur eu ligula congue urna sodales vehicula. Donec egestas nec metus sit amet faucibus. Maecenas placerat, diam non mollis laoreet, nulla lectus tincidunt eros, sit amet feugiat tellus quam et mauris. Vivamus rutrum massa justo, a condimentum eros elementum at. Duis sit amet volutpat eros. Sed nec dui eu nisi ullamcorper sodales sodales at velit. Donec ac ex quis nunc rutrum venenatis. Duis sed sodales urna. Vestibulum placerat est non est ornare venenatis. Curabitur mollis interdum tristique. Praesent euismod, lacus vitae pretium bibendum, lacus enim tincidunt quam, nec sollicitudin turpis est non tellus. Nam varius mauris purus, sit amet fermentum urna tempor id.
 
 Phasellus imperdiet lacus sit amet justo venenatis, vitae iaculis ante sodales. Donec orci justo, placerat non aliquet quis, cursus sed nunc. Sed sapien metus, imperdiet ut aliquet id, mattis eget mi. Vestibulum quis porttitor ex. Donec euismod, dolor at rhoncus venenatis, lectus nibh consectetur urna, sed molestie neque sem ac dolor. Donec eget rutrum risus. Vivamus at urna in augue sollicitudin convallis pretium quis augue. Sed euismod enim sit amet pretium ornare.

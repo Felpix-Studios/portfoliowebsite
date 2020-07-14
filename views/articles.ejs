@@ -24,7 +24,7 @@
 
         <% articles.forEach(article=>{ %>
             <div class="article">
-                <h1><a><%=article.title %></a></h1>
+                <h1><a href="/articles/<%=article.slug%>"><%=article.title %></a></h1>
                 <%
                     firstLine=article.markdown.split('.')[0]+". "+article.markdown.split('.')[1]+"..."
                     %>
