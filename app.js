@@ -6,8 +6,6 @@ const fs = require('fs');
 var MarkdownIt = require('markdown-it'),
     md = new MarkdownIt();
 
-var result = md.render(fs.readFileSync("articles/test.md").toString());
-console.log(result);
 let ejs = require('ejs'); 
 
 app.use(express.static('public'))
@@ -27,8 +25,10 @@ articles = [{
 }]
 
 articles.sort((a,b)=>b.time-a.time);
+
 articles.forEach(element => {
-    console.log(element.time)
+    console.log(element.time);
+    console.log(element.markdown)
 });
 app.get('/',(req,res)=>{
     res.render('index');
