@@ -15,14 +15,16 @@ h1 {
   font-size: 2rem;
 }
 
-h3 {
+h2 {
   margin: 0;
+  margin-top: 1rem;
   font-family: "Montserrat";
   font-size: 1.75rem;
 }
 
-h4 {
+h3 {
   margin: 0;
+  margin-top: 1rem;
   font-family: "Montserrat";
   font-size: 1.5rem;
 }
@@ -87,14 +89,21 @@ nav .nav-right a:hover {
   text-decoration: underline;
 }
 
-.article h1 {
+.articles h1 {
   margin-top: 1rem;
 }
-.article .dateRead {
-  color: #707070;
+.articles h2 {
+  margin-top: 1rem;
 }
-.article a {
+.articles h3 {
+  margin-top: 1rem;
+}
+.articles a {
   color: #121212;
+}
+
+.dateRead {
+  color: #707070;
 }
 
 .container {
@@ -105,7 +114,7 @@ nav .nav-right a:hover {
 code {
   font-family: "Source Code Pro";
   background-color: #E3E2DA;
-  padding: 4px;
+  padding: 0 4px;
 }
 
 hr:last-child {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
     <title>Felpix - Articles</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
     <div id="Articles-Block">
 
         <% articles.forEach(article=>{ %>
-            <div class="article">
+            <div class="articles">
                 <h1><a href="/articles/<%=article.slug%>"><%=article.title %></a></h1>
                 <%
                     firstLine=article.markdown.split('.')[0]+". "+article.markdown.split('.')[1]+"..."
