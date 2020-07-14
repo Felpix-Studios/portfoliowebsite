@@ -99,13 +99,17 @@ nav .nav-right a:hover {
 
 .container {
   display: grid;
-  padding: 6rem 26rem 0 26rem;
+  padding: 6rem 26rem 6rem 26rem;
 }
 
 code {
   font-family: "Source Code Pro";
   background-color: #E3E2DA;
   padding: 4px;
+}
+
+hr:last-child {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -117,7 +121,7 @@ code {
   }
 
   .container {
-    padding: 1rem 4rem 0 4rem;
+    padding: 1rem 4rem;
   }
 }
 @media (max-width: 768px) {
@@ -132,7 +136,7 @@ code {
   }
 
   .container {
-    padding: 1rem 2rem 0 2rem;
+    padding: 1rem 2rem;
   }
 }
 

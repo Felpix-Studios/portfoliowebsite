@@ -10,9 +10,8 @@ var MarkdownIt = require('markdown-it'),
     md = new MarkdownIt();
 
 let ejs = require('ejs'); 
-const { resolveSoa } = require("dns");
 
-app.use(express.static('public'))
+app.use('/static', express.static('public'))
 app.set('view engine', 'ejs');
 
 //Temp Object in place of DB+Schema
@@ -23,11 +22,47 @@ articles = [{
     wordCount:200,
     slug:slugify("This is my first Article",{lower:true,strict:true})
 },{
-    title:"This is my second Article",
-    time:new Date('2020-07-13T04:53:12.248Z'),
+    title:"This is my first Article",
+    time:new Date('2020-07-13T12:57:30-04:00'),
     markdown:md.render(fs.readFileSync("articles/test.md").toString()),
     wordCount:200,
-    slug:slugify("This is my second Article",{lower:true,strict:true})
+    slug:slugify("This is my first Article",{lower:true,strict:true})
+},{
+    title:"This is my first Article",
+    time:new Date('2020-07-13T12:57:30-04:00'),
+    markdown:md.render(fs.readFileSync("articles/test.md").toString()),
+    wordCount:200,
+    slug:slugify("This is my first Article",{lower:true,strict:true})
+},{
+    title:"This is my first Article",
+    time:new Date('2020-07-13T12:57:30-04:00'),
+    markdown:md.render(fs.readFileSync("articles/test.md").toString()),
+    wordCount:200,
+    slug:slugify("This is my first Article",{lower:true,strict:true})
+},{
+    title:"This is my first Article",
+    time:new Date('2020-07-13T12:57:30-04:00'),
+    markdown:md.render(fs.readFileSync("articles/test.md").toString()),
+    wordCount:200,
+    slug:slugify("This is my first Article",{lower:true,strict:true})
+},{
+    title:"This is my first Article",
+    time:new Date('2020-07-13T12:57:30-04:00'),
+    markdown:md.render(fs.readFileSync("articles/test.md").toString()),
+    wordCount:200,
+    slug:slugify("This is my first Article",{lower:true,strict:true})
+},{
+    title:"This is my first Article",
+    time:new Date('2020-07-13T12:57:30-04:00'),
+    markdown:md.render(fs.readFileSync("articles/test.md").toString()),
+    wordCount:200,
+    slug:slugify("This is my first Article",{lower:true,strict:true})
+},{
+    title:"This is my first Article",
+    time:new Date('2020-07-13T12:57:30-04:00'),
+    markdown:md.render(fs.readFileSync("articles/test.md").toString()),
+    wordCount:200,
+    slug:slugify("This is my first Article",{lower:true,strict:true})
 }]
 
 articles.sort((a,b)=>b.time-a.time);

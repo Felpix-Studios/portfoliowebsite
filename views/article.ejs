@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
     <title>Felpix - Articles</title>
 </head>
 <body>
 <nav>
     <a href="/" id="title">Felpix</a>
     <div class="nav-right">
-        <a href="projects">Projects</a>
-        <a href="articles" class="active">Articles</a>
-        <a href="about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/articles" class="active">Articles</a>
+        <a href="/about">About</a>
     </div>
 </nav>
 <div class="container">
     <h1><%=article.title %></h1>
+    <p class="dateRead"><% time=article.time.toString();
+        words=time.split(" ");
+        words.length=4;
+        words.shift();
+        timeString="";
+        words.forEach(element => {
+            timeString+=element+" "
+        });
+        %><%=timeString%> • <%=Math.round(article.wordCount/200) %> Min Read</p>
+    <hr>
+    <%-article.markdown %>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 </body>
 </html>
