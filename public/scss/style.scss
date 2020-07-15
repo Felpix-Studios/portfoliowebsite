@@ -1,6 +1,7 @@
 $darkMode:#121212;
 $gray:#707070;
 $blu:#0088c9;
+$quoteBack:#f9f9f9;
 $bluGreen:#0EA5A0;
 $lightMode: #f6f6f6;
 $titleFont:'Montserrat';
@@ -37,6 +38,9 @@ h3{
 p{
     margin: 1rem 0 0 0;
     font-size: 1.25rem;
+}
+p:last-child{
+    margin-bottom: 1rem;
 }
 a{
     color:$bluGreen;
@@ -114,6 +118,9 @@ nav{
     display: grid;
     padding: 6rem 26rem 6rem 26rem;
 }
+.project{
+    display: inline-grid;
+}
 code{
     font-family: $codeFont;
     background-color: #E3E2DA;
@@ -121,6 +128,20 @@ code{
 }
 hr:last-child{
     margin-bottom: 1rem;
+}
+ul,ol{
+    font-size: 1.25rem;
+    list-style-position: inside;
+    text-align: center;
+}
+blockquote{
+    display: block;
+    border-left: 10px solid $gray;
+    margin: 1.5rem 0.5rem;
+    padding: 0.5rem 2rem;
+}
+footer{
+    margin-top: 3rem;
 }
 @media(max-width: 1024px) {
     nav{

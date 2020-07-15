@@ -6,8 +6,7 @@ const app = express();
 
 
 
-var MarkdownIt = require('markdown-it'),
-    md = new MarkdownIt();
+var MarkdownIt = require('markdown-it'),md = new MarkdownIt();
 
 let ejs = require('ejs'); 
 
@@ -19,7 +18,7 @@ articles = [{
     title:"This is my first Article",
     time:new Date('2020-07-13T12:57:30-04:00'),
     markdown:md.render(fs.readFileSync("articles/test.md").toString()),
-    wordCount:200,
+    wordCount:fs.readFileSync("articles/test.md").toString().split(' ').length,
     slug:slugify("This is my first Article",{lower:true,strict:true})
 }];
 
