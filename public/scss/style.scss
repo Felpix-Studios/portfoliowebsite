@@ -116,7 +116,7 @@ nav{
 }
 .container{
     display: grid;
-    padding: 6rem 26rem 6rem 26rem;
+    padding: 6rem 26rem 1rem 26rem;
 }
 .project{
     display: inline-grid;
@@ -138,10 +138,11 @@ blockquote{
     display: block;
     border-left: 10px solid $gray;
     margin: 1.5rem 0.5rem;
-    padding: 0.5rem 2rem;
+    padding: 0.25rem 2rem;
 }
 footer{
-    margin-top: 3rem;
+    position: relative;
+    bottom: 0;
 }
 @media(max-width: 1024px) {
     nav{

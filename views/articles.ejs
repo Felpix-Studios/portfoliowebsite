@@ -19,7 +19,7 @@
 </nav>
 <div class="container">
     <h1>Articles</h1>
-    <p>Some website told me that starting a blog could generate some serious passive-revenue. Well, that's one career erased from the list.</p>
+    <p>Writing is a great way to express oneself and to talk about worldly topics. Behold, an assortment of essays.</p>
     <hr>
     <div id="Articles-Block">
 
@@ -27,7 +27,7 @@
             <div class="articles">
                 <h1><a href="/articles/<%=article.slug%>"><%=article.title %></a></h1>
                 <%
-                    firstLine=article.markdown.split('.')[0]+". "+article.markdown.split('.')[1]+"..."
+                    firstLine=article.markdown.split('.')[0]+"..."
                     %>
                 <%-firstLine %>
                 <p class="dateRead"><% time=article.time.toString();
@@ -45,5 +45,15 @@
         
     </div>
 </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111843914-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111843914-1');
+</script>
+
 </body>
 </html>
