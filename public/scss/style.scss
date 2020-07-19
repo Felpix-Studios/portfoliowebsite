@@ -16,6 +16,7 @@ $codeFont:'Source Code Pro';
 body{
     background-color: $lightMode;
     font-family: $textFont, sans-serif;
+    text-rendering: optimizeLegibility;
 }
 h1{
     margin: 0;
@@ -38,6 +39,8 @@ h3{
 p{
     margin: 1rem 0 0 0;
     font-size: 1.25rem;
+    line-height: 200%;
+    font-weight: 400;
 }
 p:last-child{
     margin-bottom: 1rem;
@@ -166,10 +169,27 @@ footer{
             margin-right: 2rem;
             a{
                 padding: 0px 1rem;
+                
             }
         }
     }
     .container{
         padding: 1rem 2rem;
+    }
+}
+@media(max-width: 576px) {
+    nav{
+        #title{
+            margin-left: 1rem;
+        }
+        .nav-right{
+            margin-right: 1rem;
+            a{
+                padding: 0px 0.5rem;
+            }
+        }
+    }
+    .container{
+        padding: 1rem 1rem;
     }
 }

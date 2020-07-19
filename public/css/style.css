@@ -7,6 +7,7 @@
 body {
   background-color: #f6f6f6;
   font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -32,6 +33,8 @@ h3 {
 p {
   margin: 1rem 0 0 0;
   font-size: 1.25rem;
+  line-height: 200%;
+  font-weight: 400;
 }
 
 p:last-child {
@@ -172,6 +175,21 @@ footer {
 
   .container {
     padding: 1rem 2rem;
+  }
+}
+@media (max-width: 576px) {
+  nav #title {
+    margin-left: 1rem;
+  }
+  nav .nav-right {
+    margin-right: 1rem;
+  }
+  nav .nav-right a {
+    padding: 0px 0.5rem;
+  }
+
+  .container {
+    padding: 1rem 1rem;
   }
 }
 
