@@ -147,6 +147,17 @@ footer{
     position: relative;
     bottom: 0;
 }
+.projectContainer{
+    margin:0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+}
+.project{
+
+}
 @media(max-width: 1024px) {
     nav{
         #title{
