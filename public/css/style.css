@@ -160,15 +160,24 @@ footer {
 }
 
 .project {
+  display: inline;
   background-color: #E3E2DA;
   padding: 0.5rem 2rem;
   transition: 250ms ease-in-out;
 }
 .project:hover {
-  background-color: #654fa1;
+  background-color: #0EA5A0;
   transform: scale(1.05, 1.05);
-  color: #f6f6f6 !important;
 }
+.project:hover p, .project:hover h3, .project:hover a i {
+  color: #f6f6f6;
+}
+.project a i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
 @media (max-width: 1024px) {
   nav #title {
     margin-left: 4rem;

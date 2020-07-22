@@ -94,9 +94,6 @@ nav{
         }
     }
 }
-#Articles-Block{
-
-}
 .articles{
     h1{
         margin-top: 1rem;
@@ -154,18 +151,25 @@ footer{
     grid-gap:2rem
 }
 .project{
+    display: inline;
     background-color: #E3E2DA;
     padding: 0.5rem 2rem;
     transition: 250ms ease-in-out;
     &:hover{
-        background-color: #654fa1;
+        background-color: $bluGreen;
         transform: scale(1.05,1.05);
-        color:$lightMode !important;
-        
+        p,h3,a i{
+            color: $lightMode;
+        }
     }
     h2{
     }
     p{
+    }
+    a i{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
     }
 }
 @media(max-width: 1024px) {
