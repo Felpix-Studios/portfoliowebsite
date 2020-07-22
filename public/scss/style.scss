@@ -1,7 +1,5 @@
 $darkMode:#121212;
 $gray:#707070;
-$blu:#0088c9;
-$quoteBack:#f9f9f9;
 $bluGreen:#0EA5A0;
 $lightMode: #f6f6f6;
 $titleFont:'Montserrat';
@@ -148,15 +146,27 @@ footer{
     bottom: 0;
 }
 .projectContainer{
+    width: 100%;
     margin:0;
-    padding: 0;
+    padding: 2rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-row-gap: 2rem;
-    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:2rem
 }
 .project{
-
+    background-color: #E3E2DA;
+    padding: 0.5rem 2rem;
+    transition: 250ms ease-in-out;
+    &:hover{
+        background-color: #654fa1;
+        transform: scale(1.05,1.05);
+        color:$lightMode !important;
+        
+    }
+    h2{
+    }
+    p{
+    }
 }
 @media(max-width: 1024px) {
     nav{
@@ -186,6 +196,9 @@ footer{
     }
     .container{
         padding: 1rem 2rem;
+    }
+    .projectContainer{
+        grid-template-columns: 100%;
     }
 }
 @media(max-width: 576px) {
