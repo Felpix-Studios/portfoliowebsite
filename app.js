@@ -20,6 +20,12 @@ articles = [{
     markdown:md.render(fs.readFileSync("articles/On_Beginnings.md").toString()),
     wordCount:fs.readFileSync("articles/On_Beginnings.md").toString().split(' ').length,
     slug:slugify("On Beginnings",{lower:true,strict:true})
+},{
+    title:"Ngl, I Don’t Know How To Write",
+    time:new Date('2020-08-06T23:12:00+00:00'),
+    markdown:md.render(fs.readFileSync("articles/I_dont_know_how_to_write.md").toString()),
+    wordCount:fs.readFileSync("articles/I_dont_know_how_to_write.md").toString().split(' ').length,
+    slug:slugify("Ngl, I Don’t Know How To Write",{lower:true,strict:true})
 }];
 
 articles.sort((a,b)=>b.time-a.time);
