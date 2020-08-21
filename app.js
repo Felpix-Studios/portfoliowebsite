@@ -26,8 +26,13 @@ articles = [{
     markdown:md.render(fs.readFileSync("articles/I_dont_know_how_to_write.md").toString()),
     wordCount:fs.readFileSync("articles/I_dont_know_how_to_write.md").toString().split(' ').length,
     slug:slugify("Ngl, I Don’t Know How To Write",{lower:true,strict:true})
+},{
+    title:"The Threat of Anti-intellectualism",
+    time:new Date('2020-08-21T22:01:24+00:00'),
+    markdown:md.render(fs.readFileSync("articles/The_Threat_of_Anti-intellectualism.md").toString()),
+    wordCount:fs.readFileSync("articles/The_Threat_of_Anti-intellectualism.md").toString().split(' ').length,
+    slug:slugify("The Threat of Anti-intellectualism",{lower:true,strict:true})
 }];
-
 articles.sort((a,b)=>b.time-a.time);
 
 articles.forEach(element => {
