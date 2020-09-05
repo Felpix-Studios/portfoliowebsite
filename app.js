@@ -37,7 +37,7 @@ articles = [{
     time:new Date('2020-09-04T20:03:00+00:00'),
     markdown:md.render(fs.readFileSync("articles/Political_Parties_Polarization_and_some_Politics.md").toString()),
     wordCount:fs.readFileSync("articles/Political_Parties_Polarization_and_some_Politics.md").toString().split(' ').length,
-    slug:slugify("Political_Parties_Polarization_and_some_Politics",{lower:true,strict:true})
+    slug:slugify("Political Parties, Polarization, and some Politics",{lower:true,strict:true})
 }];
 articles.sort((a,b)=>b.time-a.time);
 
