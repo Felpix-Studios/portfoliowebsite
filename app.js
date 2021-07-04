@@ -15,11 +15,11 @@ app.set('view engine', 'ejs');
 
 //Temp Object in place of DB+Schema
 articles = [{
-    title:"Ngl, I Don’t Know How To Write",
+    title:"The Pilot Article",
     time:new Date('2020-08-06T23:12:00+00:00'),
-    markdown:md.render(fs.readFileSync("articles/I_dont_know_how_to_write.md").toString()),
-    wordCount:fs.readFileSync("articles/I_dont_know_how_to_write.md").toString().split(' ').length,
-    slug:slugify("Ngl, I Don’t Know How To Write",{lower:true,strict:true})
+    markdown:md.render(fs.readFileSync("articles/The_Pilot_Article.md").toString()),
+    wordCount:fs.readFileSync("articles/The_Pilot_Article.md").toString().split(' ').length,
+    slug:slugify("The_Pilot_Article",{lower:true,strict:true})
 }];
 articles.sort((a,b)=>b.time-a.time);
 

@@ -2,9 +2,9 @@ You read the title, and now you’re reading this. Frankly, why? Just, why? Out 
 Honestly, I’ve no idea. However, all the posts will probably fall into the following broad sections:  
 
  - Slice of life
- - Software development, *Essays on Failure*
+ - Software development
  - Design, well, at least it looks nice
  - Book/Media reviews
- - And lastly, blurbs of random, meaningless text
+ - And lastly, blurbs of random text
 
 Stick around if you want to read ‘em. Maybe a couple will be interesting, maybe not. If a blog is supposed to spread information, consider me investigated by multiple agencies for fraud. This blog is hereby active, or something like that. Again, I don’t know what I’m doing.
