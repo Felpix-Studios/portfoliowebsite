@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="static/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Felpix - Articles</title>
-</head>
-<body>
-<nav>
-    <a href="/" id="title">Felpix</a>
-    <div class="nav-right">
-        <a href="projects">Projects</a>
-        <a href="articles" class="active">Articles</a>
-        <a href="about">About</a>
-    </div>
-</nav>
-<div class="container">
-    <h1>Articles</h1>
-    <p>Writing is a great way to express oneself and to talk about things. Plus, it's pretty fun.</p>
-    <hr>
-    <div id="Articles-Block">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="static/css/style.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico" />
+		<title>Felpix - Articles</title>
+	</head>
+	<body>
+		<nav>
+			<a href="/" id="title">Felpix</a>
+			<div class="nav-right">
+				<a href="projects">Projects</a>
+				<a href="articles" class="active">Articles</a>
+				<a href="about">About</a>
+			</div>
+		</nav>
+		<div class="container">
+			<h1>Articles</h1>
+			<p>
+				Writing is a great way to express oneself and to talk about
+				things. Plus, it's pretty fun.
+			</p>
+			<hr />
+			<div id="Articles-Block">
+				<% articles.forEach(article=>{ %>
+				<div class="articles">
+					<h1>
+						<a href="/articles/<%=article.slug%>"
+							><%=article.title %></a
+						>
+					</h1>
+					<% firstLine=article.markdown.split('.')[0]+"..." %>
+					<%-firstLine %>
+					<p class="dateRead">
+						<% time=article.time.toString(); words=time.split(" ");
+						words.length=4; words.shift(); timeString="";
+						words.forEach(element => { timeString+=element+" " });
+						%><%=timeString%> • <%=Math.round(article.wordCount/200)
+						%> Min Read
+					</p>
+					<hr />
+				</div>
+				<% }) %>
+			</div>
+		</div>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-111843914-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-        <% articles.forEach(article=>{ %>
-            <div class="articles">
-                <h1><a href="/articles/<%=article.slug%>"><%=article.title %></a></h1>
-                <%
-                    firstLine=article.markdown.split('.')[0]+"..."
-                    %>
-                <%-firstLine %>
-                <p class="dateRead"><% time=article.time.toString();
-                    words=time.split(" ");
-                    words.length=4;
-                    words.shift();
-                    timeString="";
-                    words.forEach(element => {
-                        timeString+=element+" "
-                    });
-                    %><%=timeString%> • <%=Math.round(article.wordCount/200) %> Min Read</p>
-                <hr>
-            </div>
-        <% }) %>
-        
-    </div>
-</div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111843914-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-111843914-1');
-</script>
-
-</body>
+			gtag("config", "UA-111843914-1");
+		</script>
+	</body>
 </html>

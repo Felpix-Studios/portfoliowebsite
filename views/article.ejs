@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="/static/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Felpix - Articles</title>
-</head>
-<body>
-<nav>
-    <a href="/" id="title">Felpix</a>
-    <div class="nav-right">
-        <a href="/projects">Projects</a>
-        <a href="/articles" class="active">Articles</a>
-        <a href="/about">About</a>
-    </div>
-</nav>
-<div class="container">
-    <h1><%=article.title %></h1>
-    <p class="dateRead"><% time=article.time.toString();
-        words=time.split(" ");
-        words.length=4;
-        words.shift();
-        timeString="";
-        words.forEach(element => {
-            timeString+=element+" "
-        });
-        %><%=timeString%> • <%=Math.round(article.wordCount/200) %> Min Read</p>
-    <hr>
-    <div class="article">
-        <%-article.markdown %>
-    </div>
-    <footer>
-        <p><a href="mailto: hi@felpix.com" target="new">hi@felpix.com</a> | <a href="https://github.com/Felpix-Studios" target="new">Felpix-Studios</a> on Github | <a href="https://twitter.com/FelpixTheMaker" target="new">@FelpixTheMaker</a> on Twitter</p>
-    </footer>
-</div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111843914-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="/static/css/style.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico" />
+		<title>Felpix - Articles</title>
+	</head>
+	<body>
+		<nav>
+			<a href="/" id="title">Felpix</a>
+			<div class="nav-right">
+				<a href="/projects">Projects</a>
+				<a href="/articles" class="active">Articles</a>
+				<a href="/about">About</a>
+			</div>
+		</nav>
+		<div class="container">
+			<h1><%=article.title %></h1>
+			<p class="dateRead">
+				<% time=article.time.toString(); words=time.split(" ");
+				words.length=4; words.shift(); timeString="";
+				words.forEach(element => { timeString+=element+" " });
+				%><%=timeString%> • <%=Math.round(article.wordCount/200) %> Min
+				Read
+			</p>
+			<hr />
+			<div class="article"><%-article.markdown %></div>
+			<footer>
+				<p>
+					<a href="mailto: hi@felpix.com" target="new"
+						>hi@felpix.com</a
+					>
+					|
+					<a href="https://github.com/Felpix-Studios" target="new"
+						>Felpix-Studios</a
+					>
+					on Github |
+					<a href="https://twitter.com/FelpixTheMaker" target="new"
+						>@FelpixTheMaker</a
+					>
+					on Twitter
+				</p>
+			</footer>
+		</div>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-111843914-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-  gtag('config', 'UA-111843914-1');
-</script>
-
-</body>
+			gtag("config", "UA-111843914-1");
+		</script>
+	</body>
 </html>
