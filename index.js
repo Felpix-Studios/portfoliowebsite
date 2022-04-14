@@ -30,9 +30,9 @@ app.set('view engine', 'ejs');
 // });
 app.get('/',(req,res)=>{
     try{
-        res.render(index);
+        res.render('index');
     }catch(err){
-        console.log(err);
+        res.render('oopse')
     }
 });
 app.get('/projects',(req,res)=>{
