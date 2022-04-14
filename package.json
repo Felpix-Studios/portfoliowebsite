@@ -6,13 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "start":"node index.js",
-    "build":"npm run vercel-build"
+    "start": "node index.js",
+    "build": "npm i && npm run vercel-build"
   },
   "author": "Kevin Li",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.3",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "markdown-it": "^11.0.0",
     "slugify": "^1.4.4"

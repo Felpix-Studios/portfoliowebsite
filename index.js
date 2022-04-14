@@ -30,7 +30,7 @@ app.set('view engine', 'ejs');
 // });
 app.get('/',(req,res)=>{
     try{
-        res.send('express on verce')
+        res.render(index);
     }catch(err){
         console.log(err);
     }
