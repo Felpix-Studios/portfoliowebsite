@@ -29,7 +29,11 @@ app.set('view engine', 'ejs');
 //     console.log(element.slug)
 // });
 app.get('/',(req,res)=>{
-    res.render('index');
+    try{
+        res.render('index');
+    }catch(err){
+        console.log(err);
+    }
 });
 app.get('/projects',(req,res)=>{
     res.render('projects');
@@ -48,4 +52,5 @@ app.get('/about',(req,res)=>{
 const port= process.env.PORT || 5000;
 
 
-app.listen(port,() => console.log(`Server started on port ${port}, big change`));
+app.listen(port,() => console.log(`Server started on port ${port}`));
+module.exports=app;
