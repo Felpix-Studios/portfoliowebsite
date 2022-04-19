@@ -41,7 +41,7 @@
 						<% time=article.time.toString(); words=time.split(" ");
 						words.length=4; words.shift(); timeString="";
 						words.forEach(element => { timeString+=element+" " });
-						%><%=timeString%> • <%=Math.round(article.wordCount/200)
+						%><%=timeString%> • <%=Math.round(article.wordCount/100)
 						%> Min Read
 					</p>
 					<hr />
