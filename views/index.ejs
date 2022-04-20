@@ -8,6 +8,252 @@
 			rel="stylesheet"
 		/>
 		<link href="public/css/style.css" rel="stylesheet" />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  color: #121212;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  margin-top: 1rem;
+  font-family: "Montserrat";
+  font-size: 1.75rem;
+}
+
+h3 {
+  margin: 0;
+  margin-top: 1rem;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 1rem 0 0 0;
+  font-size: 1.25rem;
+  line-height: 200%;
+  font-weight: 400;
+}
+
+p:last-child {
+  margin-bottom: 1rem;
+}
+
+h1:hover, h2:hover, h3:hover, p:hover {
+  cursor: default;
+}
+
+a {
+  color: #0EA5A0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline !important;
+  color: #121212;
+}
+
+nav {
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 4rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #title {
+  font-size: 2rem;
+  float: left;
+  font-family: "Montserrat";
+  margin-left: 16rem;
+}
+nav #title:hover {
+  text-decoration: underline;
+}
+nav .nav-right {
+  vertical-align: bottom !important;
+  margin-right: 16rem;
+  float: right;
+  height: auto;
+  width: auto;
+}
+nav .nav-right a {
+  float: left;
+  color: #707070;
+  text-align: center;
+  padding: 0px 42px;
+  text-decoration: none;
+}
+nav .nav-right a:last-child {
+  padding-right: 0;
+}
+nav .nav-right a:hover {
+  color: #121212;
+  text-decoration: underline;
+}
+
+.articles h1 {
+  margin-top: 1rem;
+}
+.articles h2 {
+  margin-top: 1rem;
+}
+.articles h3 {
+  margin-top: 1rem;
+}
+.articles a {
+  color: #121212;
+}
+
+.dateRead {
+  color: #707070;
+}
+
+.container {
+  display: grid;
+  padding: 6rem 26rem 1rem 26rem;
+}
+
+.project {
+  display: inline-grid;
+}
+
+code {
+  font-family: "Source Code Pro";
+  background-color: #E3E2DA;
+  padding: 0 4px;
+}
+
+hr:last-child {
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  font-size: 1.25rem;
+  list-style-position: inside;
+  text-align: left;
+}
+
+blockquote {
+  display: block;
+  border-left: 10px solid #707070;
+  margin: 1.5rem 0.5rem;
+  padding: 0.25rem 2rem;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.projectContainer {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.project {
+  display: inline;
+  background-color: #E3E2DA;
+  padding: 0.5rem 2rem 1.5rem 2rem;
+  transition: 250ms ease-in-out;
+}
+.project:hover {
+  background-color: #0EA5A0;
+  transform: scale(1.05, 1.05);
+}
+.project:hover p, .project:hover h3, .project:hover a i {
+  color: #f6f6f6;
+}
+.project a i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.isDisabled {
+  color: #707070;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.fancyhover {
+  transition: all 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (max-width: 1600px) {
+  nav #title {
+    margin-left: 4rem;
+  }
+  nav .nav-right {
+    margin-right: 4rem;
+  }
+
+  .container {
+    padding: 1rem 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  nav #title {
+    margin-left: 2rem;
+  }
+  nav .nav-right {
+    margin-right: 2rem;
+  }
+  nav .nav-right a {
+    padding: 0px 1rem;
+  }
+
+  .container {
+    padding: 1rem 2rem;
+  }
+
+  .projectContainer {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 576px) {
+  nav #title {
+    margin-left: 1rem;
+  }
+  nav .nav-right {
+    margin-right: 1rem;
+  }
+  nav .nav-right a {
+    padding: 0px 0.5rem;
+  }
+
+  .container {
+    padding: 1rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+    </style>
 		<link rel="shortcut icon" href="/static/images/favicon.ico" />
 		<title>Felpix - Home</title>
 	</head>
