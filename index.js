@@ -12,6 +12,7 @@ let ejs = require('ejs');
 
 app.use('/static', express.static('public'))
 app.set('view engine', 'ejs');
+app.set('views',path.join(__dirname,'/views'))
 
 //Temp Object in place of DB+Schema
 // articles = [{
